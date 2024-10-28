@@ -1,10 +1,4 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f0f0f0, #ffffff);
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 nav {
@@ -41,14 +35,6 @@ nav {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.319); /* Overlay für bessere Lesbarkeit */
-}
-
-.parallax h1 {
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
 
@@ -110,6 +96,7 @@ footer a:hover {
 
 
 
+
 footer {
     margin-top: auto;
 }
@@ -121,3 +108,85 @@ footer {
     border: none;
     opacity: 0.5;
 }
+
+
+@font-face {
+  font-family: Clash Display;
+  src: url("../fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf");
+}
+
+@font-face {
+  font-family: Telma;
+  src: url("../fonts/Telma_Complete/Fonts/OTF/Telma-Black.otf");
+}
+
+@font-face {
+  font-family: Britney;
+  src: url("../fonts/Britney_Complete/Fonts/OTF/Britney-Regular.otf");
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.parallax h1 {
+	font-family: 'Britney';
+    color: white;
+    font-size: 6rem;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
