@@ -146,8 +146,7 @@ body {
         margin-top: -5px; 
     }
 
-
-
+    
 
 
  /* Transition and Hover Effects */
@@ -177,4 +176,11 @@ body {
 /* Border and Icon Color */
 .text-danger {
     color: #dc3545;
+}
+
+
+@media (max-width: 992px) { 
+    #navbarNav.show {
+        background-color: white;
+    }
 }
