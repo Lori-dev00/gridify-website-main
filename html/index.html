@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-primary" href="../html/index.html">
+            <a class="navbar-brand" href="../html/index.html">
                 <img src="../bilder/hero/logo/gridify-logo.svg" alt="Gridify Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,6 +97,13 @@
                     </div>
                 </div>
             </div>
+                        <!-- Einführung Box Level 1 -->
+                        <section class=" bg-light py-5 mb-5 rounded shadow-sm">
+                            <div class="container">
+                                <h4 class="text-center mb-4 fw-semibold">Einführung ins Grid-System</h4>
+                                <p class="text-center">In Level 1 geht es darum, die Grundprinzipien des Bootstrap Grid-Systems zu verstehen. Hier lernen wir, wie Spalten und Zeilen strukturiert werden und was es bedeutet, ein flexibles Layout zu erstellen.</p>
+                            </div>
+                        </section>
         </div>
     </section>
     
@@ -116,63 +123,68 @@
 
 
 
-    <div class="container bg-white rounded-4 shadow-lg p-5 mt-5 mb-5">
-        <!-- Hauptcontainer -->
-    
-        <!-- Hero Section -->
-        <div class="row">
-            <div class="col-lg-12 position-relative">
-                <!-- Nur auf großen Bildschirmen sichtbares Bild -->
-                <img src="../bilder/level-1/gridify-bootstrap-level-1-primary-stage-image-1.jpg" 
-                     class="img-fluid w-100 rounded shadow-sm d-none d-lg-block" alt="Stage Image">
-                
-                <!-- Blauer Hintergrund für mobile und mittlere Bildschirme -->
-                <div class="d-block d-lg-none bg-primary w-100 rounded shadow-sm p-4" style="height: 400px;"></div>
-    
-                <!-- Text-Overlay -->
-                <div class="position-absolute top-50 start-5 translate-middle-y text-white ps-4 pe-4 py-5" style="max-width: 800px;">
-                    <h1 class="display-4 display-md-5">Bootstrap Columns</h1>
-                    <p class="lead mt-4">Lerne, wie du das mächtige Bootstrap-Grid-System effektiv nutzen kannst, um responsive Layouts ganz einfach zu erstellen.</p>
-                    <a href="#" class="btn btn-outline-light mt-3">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Cards Section -->
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="card p-4 shadow-sm border-0">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-grid text-primary me-3" style="font-size: 1.5rem;"></i>
-                            <h5 class="card-title">Was sind Bootstrap Columns?</h5>
-                        </div>
-                        <p class="card-text">Bootstrap verwendet ein 12-Spalten-Layout, mit dem du deine Webseite flexibel aufteilen kannst. Jede Reihe kann bis zu 12 Spalten enthalten, die sich automatisch an verschiedene Bildschirmgrößen anpassen.</p>
+        <div class="container bg-white rounded-4 shadow-lg p-3 p-md-5 my-5">
+            <!-- Hauptcontainer -->
+        
+            <!-- Hero Section -->
+            <div class="row">
+                <div class="col-lg-12 position-relative">
+                    <!-- Bild für große Bildschirme -->
+                    <img src="../bilder/level-1/gridify-home-stage-image-level-one-blue-world-primary.jpg" 
+                         class="img-fluid w-100 rounded-4 shadow-sm d-none d-lg-block" alt="Stage Image Desktop">
+                    
+                    <!-- Bild für mobile Bildschirme -->
+                    <img src="../bilder/level-1/gridify-home-stage-image-level-one-blue-world-primary-mobile.jpg" 
+                         class="img-fluid w-100 rounded-4 shadow-sm d-block d-lg-none" alt="Stage Image Mobile">
+        
+                    <!-- Text-Overlay mit Bootstrap-Klassen -->
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3 p-md-4" style="max-width: 600px;">
+                        <h1 class="display-6 display-md-4 fw-bold mb-3 mb-md-4">Bootstrap Columns</h1>
+                        <p class="lead fs-6 fs-md-5">Entdecke die Möglichkeiten des Bootstrap-Grid-Systems, um responsive Layouts mühelos zu erstellen.</p>
+                        <a href="#" class="btn btn-light btn-sm btn-md-lg mt-3 px-3 px-md-4 py-2 d-inline-flex align-items-center gap-2">
+                            Mehr erfahren <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card p-4 shadow-sm border-0">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-arrows-fullscreen text-primary me-3" style="font-size: 1.5rem;"></i>
-                            <h5 class="card-title">Responsive Verhalten</h5>
+        
+            <!-- Cards Section -->
+            <div class="row mt-5 g-4 align-items-stretch">
+                <div class="col-md-6 d-flex">
+                    <div class="card p-4 shadow-sm border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-grid text-primary me-3" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title fw-semibold">Was sind Bootstrap Columns?</h5>
+                            </div>
+                            <p class="card-text text-secondary">Nutze das 12-Spalten-Layout von Bootstrap, um deine Webseite dynamisch zu strukturieren und für jede Bildschirmgröße optimal zu gestalten.</p>
                         </div>
-                        <p class="card-text">Mit Bootstrap Columns kannst du Spalten für verschiedene Bildschirmgrößen definieren. Verwende Klassen wie <code>col-md-6</code>, um z.B. zwei Spalten auf mittleren und größeren Bildschirmen zu erstellen, die sich auf kleineren Bildschirmen stapeln.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="card p-4 shadow-sm border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-arrows-fullscreen text-primary me-3" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title fw-semibold">Responsive Verhalten</h5>
+                            </div>
+                            <p class="card-text text-secondary">Definiere Spalten für verschiedene Bildschirmgrößen. Mit Klassen wie <code>col-md-6</code> lassen sich z.B. Spalten auf mittleren Bildschirmen nebeneinander anordnen, die auf kleineren Bildschirmen gestapelt werden.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <!-- Call to Action Section -->
-        <div class="row mt-5">
-            <div class="col-12 text-center p-5 bg-light rounded-3 shadow-sm">
-                <h2>Bist du bereit mehr zu lernen?</h2>
-                <p>Starte Level 2 und Booste dein Können innerhalb kürzester Zeit!</p>
-                <a href="https://getbootstrap.com/" class="btn btn-primary btn-lg mt-3">Loslegen</a>
+        
+            <!-- Call to Action Section -->
+            <div class="row mt-5">
+                <div class="col-12 text-center p-5 bg-light rounded-4 shadow-sm">
+                    <h2 class="fw-bold mb-3">Bereit für Level 2?</h2>
+                    <p class="text-secondary">Starte jetzt und erweitere deine Fähigkeiten mit Bootstrap!</p>
+                    <a href="#level2" class="btn btn-primary btn-lg mt-3 px-5 py-2">Loslegen</a>
+
+                </div>
             </div>
         </div>
-    </div>
+        
     
     
     
@@ -214,6 +226,13 @@
                     </div>
                 </div>
             </div>
+             <!-- Einführung Box Level 2 -->
+             <section class="bg-light py-5 mb-5 rounded shadow-sm">
+                <div class="container">
+                    <h4 class="text-center mb-4 fw-semibold">Erweiterte Grid-Optionen und Responsive Design</h4>
+                    <p class="text-center">In Level 2 vertiefen wir unser Wissen über das Grid-System, indem wir uns mit erweiterten Layout-Optionen beschäftigen und lernen, wie das responsive Verhalten für verschiedene Bildschirmgrößen funktioniert.</p>
+                </div>
+            </section>
         </div>
     </section>
 
@@ -336,6 +355,13 @@
                     </div>
                 </div>
             </div>
+            <!-- Einführung Box Level 3 -->
+            <section class="bg-light py-5 mb-5 rounded shadow-sm">
+                <div class="container">
+                    <h4 class="text-center mb-4 fw-semibold">Breakpoints und Anpassung an Bildschirmgrößen</h4>
+                    <p class="text-center">In Level 3 fokussieren wir uns auf die Verwendung von Breakpoints. Diese ermöglichen es, das Layout für verschiedene Bildschirmgrößen anzupassen und ein responsives Erlebnis zu schaffen.</p>
+                </div>
+            </section>
         </div>
     </section>
     
@@ -348,40 +374,40 @@
                 <!-- Erste Reihe auf lg-Größe (drei Spalten mit col-lg-4) -->
                 <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
-                        <h5 class="text-danger mb-2">Bootstrap Container</h5>
-                        <p class="text-muted mb-0">Erstellt eine zentrierte Fläche für Inhalte mit Abständen.</p>
+                        <h5 class="text-danger mb-2">Container</h5>
+                        <p class="text-muted mb-0">Zentriert Inhalte.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
-                        <h5 class="text-danger mb-2">Grid System</h5>
-                        <p class="text-muted mb-0">Mit Reihen und Spalten wird eine responsive Struktur erstellt.</p>
+                        <h5 class="text-danger mb-2">Grid-System</h5>
+                        <p class="text-muted mb-0">Spaltenlayout für Flexibilität.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4 d-flex align-items-stretch">
+                <div class="col-12 col-md-12 col-lg-4 d-flex align-items-stretch order-lg-0 order-md-2">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
                         <h5 class="text-danger mb-2">Breakpoints</h5>
-                        <p class="text-muted mb-0">Passen sich an verschiedene Bildschirmgrößen an.</p>
+                        <p class="text-muted mb-0">Passt sich an Bildschirme an.</p>
                     </div>
                 </div>
 
                 <!-- Zweite Reihe auf lg-Größe (zwei col-lg-2 links und eine col-lg-8 rechts) -->
-                <div class="col-6 col-md-3 col-lg-2 d-flex align-items-stretch">
+                <div class="col-12 col-md-3 col-lg-2 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
-                        <h5 class="text-danger mb-2">Spalte 1</h5>
-                        <p class="text-muted mb-0">Individuelle Breite für jede Auflösung.</p>
+                        <h5 class="text-danger mb-2">Kompakte Spalte</h5>
+                        <p class="text-muted mb-0">Flexibel skaliert.</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 d-flex align-items-stretch">
+                <div class="col-12 col-md-3 col-lg-2 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
-                        <h5 class="text-danger mb-2">Spalte 2</h5>
-                        <p class="text-muted mb-0">Teil des Grid-Systems für Flexibilität.</p>
+                        <h5 class="text-danger mb-2">Kompakte Spalte 2</h5>
+                        <p class="text-muted mb-0">Optimiert für Geräte.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-8 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
                         <h5 class="text-danger mb-2">Flex-Container</h5>
-                        <p class="text-muted mb-0">Ermöglicht eine flexible Anordnung der Inhalte.</p>
+                        <p class="text-muted mb-0">Horizontale und vertikale Ausrichtung, passt sich an den Raum an.</p>
                     </div>
                 </div>
 
@@ -389,230 +415,105 @@
                 <div class="col-12 d-flex align-items-stretch">
                     <div class="box bg-light py-4 px-3 rounded-3 border border-danger shadow-sm text-center transition w-100">
                         <h5 class="text-danger mb-2">Full-Width Content</h5>
-                        <p class="text-muted mb-0">Verwenden Sie das gesamte Raster, um große Inhalte darzustellen.</p>
+                        <p class="text-muted mb-0">Verwendet volle Breite.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
     
-    <!-- LEVEL 4 -->
-    <section id="level4" class="py-5 mb-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fs-1 fw-bold d-inline-block pb-3 border-bottom border-success border-3">
-                    LEVEL 4
-                </h2>
-            </div>
-            <div class="row g-4 mb-5">
-                <!-- Desktop Version Grafik -->
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-center mb-4">Desktop Version</h3>
-                            <a href="../bilder/level-4/fourth-level-desktop.jpg" data-lightbox="level-4" data-title="Desktop Version">
-                                <img src="../bilder/level-4/fourth-level-desktop.jpg" alt="fourth-level-desktop" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tablet Version Grafik -->
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-center mb-4">Tablet Version</h3>
-                            <a href="../bilder/level-4/fourth-level-tablet.jpg" data-lightbox="level-4" data-title="Tablet Version">
-                                <img src="../bilder/level-4/fourth-level-tablet.jpg" alt="fourth-level-tablet" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- LEVEL 3 -->
+<section id="level3" class="py-5 mb-7">
+    <!-- Dein existierender Code für Level 3 -->
+</section>
+
+<!-- Zusätzlicher Abstand zwischen Level 3 und Level 4 -->
+<div class="my-7"></div>
+
+<!-- LEVEL 4 (Gesperrte Zone) -->
+<section id="level4" class="py-5 mb-5 position-relative" style="opacity: 0.6; filter: grayscale(0.8);">
+    <div class="container">
+        <!-- Coming Soon Badge mit Schlüssel-Icon -->
+        <div class="position-absolute top-0 start-50 translate-middle-x" style="margin-top: -30px;">
+            <span class="badge bg-warning text-dark fs-6 px-4 py-2 shadow d-flex align-items-center gap-2">
+                <i class="bi bi-lock-fill"></i> Coming Soon
+            </span>
         </div>
-    </section>
-    
-    <!-- Nachbau Level 4 -->
-    <section class="container mt-5 mb-5">
-        <h3 class="text-center fw-bold mb-5">Nachbau - Responsive Layout</h3>
-        <div class="shadow-box p-4 bg-dark text-white text-center rounded-1">
-            <div class="container">
-                <div class="row g-4">
-                    <!-- Erste Reihe -->
-                    <div class="col-12">
-                        <div class="p-3 rounded-1" style="background-color: #30703C; height: 80px;">
-                            <p class="mb-0">Erste Spalte</p>
-                        </div>
-                    </div>
         
-                    <!-- Zweite Reihe -->
-                    <div class="col-12 col-md-6">
-                        <div class="p-3 rounded-1" style="background-color: #F6ED21; height: 100px;">
-                            <p class="mb-0 text-dark">Zweite Spalte</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="p-3 rounded-1" style="background-color: #CFDCFF; height: 100px;">
-                            <p class="mb-0 text-dark">Dritte Spalte</p>
-                        </div>
-                    </div>
-        
-                    <!-- Dritte Reihe -->
-                    <div class="col-12 col-md-12 col-lg-6">
-                        <div class="p-3 h-100 rounded-1" style="background-color: #7D1FF2; height: 300px;">
-                            <p class="mb-0">Vierte Spalte</p>
-                        </div>
-                    </div>
-        
-                    <!-- Fünfte Spalte und Sechste bis Neunte Spalte (mit h-100 für gleiche Höhe) -->
-                    <div class="col-12 col-md-12 col-lg-6">
-                        <div class="row g-4 h-100">
-                            <!-- Fünfte Spalte (Grau) -->
-                            <div class="col-12">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #464646;">
-                                    <p class="mb-0">Fünfte Spalte (grau)</p>
-                                </div>
-                            </div>
-        
-                            <!-- Sechste bis Neunte Spalte -->
-                            <div class="col-12 col-md-6">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #E26E38;">
-                                    <p class="mb-0">Sechste Spalte</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #E26E38;">
-                                    <p class="mb-0">Siebte Spalte</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #3720C6;">
-                                    <p class="mb-0">Achte Spalte</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #3720C6;">
-                                    <p class="mb-0">Neunte Spalte</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="text-center mb-5 pt-4">
+            <h2 class="fs-1 fw-bold d-inline-block pb-3 border-bottom border-success border-3">LEVEL 4</h2>
         </div>
-    </section>
-    
-    <!-- LEVEL 5 -->
-    <section id="level5" class="py-5 mb-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fs-1 fw-bold d-inline-block pb-3 border-bottom border-info border-3">
-                    LEVEL 5
-                </h2>
-            </div>
-            <div class="row g-4 mb-5">
-                <!-- Desktop Version Grafik -->
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-center mb-4">Desktop Version</h3>
-                            <a href="../bilder/level-5/fifth-level-desktop.jpg" data-lightbox="level-5" data-title="Desktop Version">
-                                <img src="../bilder/level-5/fifth-level-desktop.jpg" alt="fifth-level-desktop" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tablet Version Grafik -->
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-center mb-4">Tablet Version</h3>
-                            <a href="../bilder/level-5/fifth-level-tablet.jpg" data-lightbox="level-5" data-title="Tablet Version">
-                                <img src="../bilder/level-5/fifth-level-tablet.jpg" alt="fifth-level-tablet" class="img-fluid rounded">
-                            </a>
-                        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Desktop Version</h3>
+                        <a href="../bilder/level-4/gridify-fourth-level-komplementär-farben-desktop.jpg" data-lightbox="level-4" data-title="Desktop Version">
+                            <img src="../bilder/level-4/gridify-fourth-level-komplementär-farben-desktop.jpg" alt="fourth-level-desktop" class="img-fluid rounded">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Nachbau Level 5 -->
-<section class="container mt-5 mb-5">
-    <h3 class="text-center fw-bold mb-5">Nachbau - Responsive Layout</h3>
-    <div class="shadow-box p-4 bg-dark text-white text-center rounded-1">
-        <div class="container">
-            <div class="row g-4">
-				 <!-- Erste Reihe -->
-                    <div class="col-12 col-md-5 col-lg-8">
-                        <div class="p-3 rounded-1" style="background-color: #bd8739; height: 80px;">
-                            <p class="mb-0">Erste Spalte</p>
-                        </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Tablet Version</h3>
+                        <a href="../bilder/level-4/gridify-fourth-level-komplementär-farben-mobile.jpg" data-lightbox="level-4" data-title="Tablet Version">
+                            <img src="../bilder/level-4/gridify-fourth-level-komplementär-farben-mobile.jpg" alt="fourth-level-tablet" class="img-fluid rounded">
+                        </a>
                     </div>
-        
-                    <!-- Zweite Reihe (g-4 = 24px) -->
-                    <div class="col-12 col-md-7 col-lg-4">
-                        <div class="p-3 rounded-1" style="background-color: #7d9bd0; height: 184px;">
-                            <p class="mb-0 text-white">Zweite Spalte</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-2">																	
-                        <div class="p-3 rounded-1" style="background-color: #30703d; height: 184px; margin-top:-105px;">
-                            <p class="mb-0 text-white">Dritte Spalte</p>
-                        </div>
-                    </div>
-        
-                    <!-- Dritte Reihe -->
-                    <div class="col-12 col-md-7 col-lg-6">
-                        <div class="p-3 rounded-1" style="background-color: #e26f37; height: 80px; margin-top:-105px;">
-                            <p class="mb-0">Vierte Spalte</p>
-                        </div>
-                    </div>
-        
-                    <!-- Fünfte Spalte bis Neunte Spalte -->
-                    <div class="col-12 col-md-4 col-lg-12">
-                        <div class="row g-4 h-100">
-                            <!-- Fünfte Spalte (Grau) -->
-                            <div class="col-12 col-lg-4 offset-lg-2	" style="height: 80px;">
-                                <div class="p-3 h-100 rounded-1" style="background-color: #24ca52; margin-top: -104px;">
-                                    <p class="mb-0">Fünfte Spalte</p>
-                                </div>
-                            </div>
-        
-                            <!-- Sechste bis Neunte Spalte -->
-                            <div class="col-12 col-md-8 col-lg-1">
-                                <div class="p-3 rounded-1" style="background-color:#d0dbff; margin-top:-105px; height:300px;">
-                                    <p class="mb-0 text-dark">Sechste Spalte</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-5 col-lg-6">
-                                <div class="p-3 rounded-1" style="background-color: #fcd009; height: 196px; margin-top: -220px;">
-                                    <p class="mb-0 text-dark">Siebte Spalte</p>
-                                </div>
-                            </div>
-							<div class="col-12 col-md-7 col-lg-5 offset-lg-7" style="margin-top: -325px;">
-                        		<div class="p-3 rounded-1" style="background-color: #6700a9; height:300px;">
-                            		<p class="mb-0">Achte Spalte</p>
-                         		</div>
-                       		</div>
-						</div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-   
-	
+
+<!-- LEVEL 5 (Gesperrte Zone) -->
+<section id="level5" class="py-5 mb-5 position-relative" style="opacity: 0.6; filter: grayscale(0.8);">
+    <div class="container">
+        <!-- Coming Soon Badge mit Schlüssel-Icon -->
+        <div class="position-absolute top-0 start-50 translate-middle-x" style="margin-top: -30px;">
+            <span class="badge bg-warning text-dark fs-6 px-4 py-2 shadow d-flex align-items-center gap-2">
+                <i class="bi bi-lock-fill"></i> Coming Soon
+            </span>
+        </div>
+        
+        <div class="text-center mb-5 pt-4">
+            <h2 class="fs-1 fw-bold d-inline-block pb-3 border-bottom border-3">LEVEL 5</h2>
+        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Desktop Version</h3>
+                        <a href="../bilder/level-5/gridify-fifth-level-komplementär-farben-desktop.jpg" data-lightbox="level-5" data-title="Desktop Version">
+                            <img src="../bilder/level-5/gridify-fifth-level-komplementär-farben-desktop.jpg" alt="fifth-level-desktop" class="img-fluid rounded">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Tablet Version</h3>
+                        <a href="../bilder/level-5/gridify-fifth-level-komplementär-farben-mobile.jpg" data-lightbox="level-5" data-title="Tablet Version">
+                            <img src="../bilder/level-5/gridify-fifth-level-komplementär-farben-mobile.jpg" alt="fifth-level-tablet" class="img-fluid rounded">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2024 GRIDIFY | <a href="../html/datenschutz.html" class="text-white">Datenschutz</a> | <a href="../html/impressum.html" class="text-white">Impressum</a></p>
-        </div>
-    </footer>
+<footer class="bg-dark text-white text-center py-4 w-100">
+    <p class="mb-0">&copy; 2024 GRIDIFY | <a href="../html/datenschutz.html" class="text-white">Datenschutz</a> | <a href="../html/impressum.html" class="text-white">Impressum</a></p>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
