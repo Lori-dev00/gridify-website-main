@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>jQuery für Anfänger - Gridify</title>
-
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Hauptnavigation -->
+<!-- Hauptnavigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="../html/index.html">
-            <img src="" alt="" class="navbar-logo">Gridify
+        <a class="navbar-brand" href="../index.html">
+            <!-- Desktop Logo (visible on medium and larger screens) -->
+            <img src="../bilder/hero/logo/gridify-logo.svg" alt="Gridify Logo" class="navbar-logo d-none d-md-inline" style="height: 40px;">
+
+            <!-- Mobile Logo (visible on small screens and below) -->
+            <img src="../bilder/hero/logo/gridify-bildmarke.svg" alt="Gridify Icon" class="navbar-logo d-inline d-md-none" style="height: 40px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,16 +28,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Grids</a>
+                    <a class="nav-link" href="../index.html#level1">Grids</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../html/impressum.html">Impressum</a>
+                    <a class="nav-link" href="impressum.html">Impressum</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../html/datenschutz.html">Datenschutz</a>
+                    <a class="nav-link" href="datenschutz.html">Datenschutz</a>
                 </li>
             </ul>
         </div>
@@ -243,7 +246,7 @@ $("button").click(function() {
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-auto">
         <div class="container">
-            <p class="mb-1">&copy; 2024 GRIDIFY | <a href="datenschutz.html" class="text-white">Datenschutz</a></p>
+            <p class="mb-1">&copy; 2024 GRIDIFY | <a href="datenschutz.html" class="text-white">Datenschutz</a> | <a href="impressum.html" class="text-white">Impressum</a></p>
         </div>
     </footer>
 
